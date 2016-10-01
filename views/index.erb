@@ -1,0 +1,61 @@
+<html>
+  <head><link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"></head>
+  <style>
+  body {
+    width: 99%;
+    font-family: 'Handlee', cursive;
+  }
+
+  #page-wrap {
+    background: linear-gradient(to bottom, #feffe8 0%,#d6dbbf 100%);
+    border: medium solid #6d0019;
+    border-radius: 15px;
+    width: 50%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  h3 {
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+  }
+
+  form {
+    padding-top: 20px;
+    margin: auto;
+    font-weight: 500;
+  }
+
+  input {
+    font-family : inherit;
+    font-size   : 100%;
+    border: 1px dotted #999;
+    border-radius: 1;
+    padding: 3px;
+    margin-left: 5px;
+  -webkit-appearance: none;
+}
+
+  input[type=submit] {
+    background: #8ead9e;
+
+  }
+
+</style>
+  <title>Caesar Cipher - a handy tool to give your words mystery.</title>
+  <body style = "background: #8ead9e">
+    <div id="page-wrap">
+      <h3>Welcome to Caesar's Cipher!</h3>
+    <form>
+      <label>Enter your message:<input type='text' name='text' size='70' /></label><br /><br />
+      <label>The number to shift over:<input type='number' name='shift' style="width: 7em" /></label>
+      <input type='submit' value='Cipher It!' />
+    </form>
+    <h3><%= message %></h3>
+    <p>
+
+    </p>
+  </div>
+    </body>
+</html>
