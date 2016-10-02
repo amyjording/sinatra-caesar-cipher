@@ -4,7 +4,6 @@ require 'sinatra/reloader' if development?
 
 get "/" do
   message = caesar_cipher(params["text"],params["shift"])
-  # caesar_cipher(params["text"], params["shift"]).join
 
   erb :index, :locals => {:message => message}
 
